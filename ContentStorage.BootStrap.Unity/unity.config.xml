@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="unity" type="Microsoft.Practices.Unity.Configuration.UnityConfigurationSection, Microsoft.Practices.Unity.Configuration"/>
+  </configSections>
+  <unity>
+    <alias alias="IImageStorage" type="ContentStorage.Contract.IImageStorage, ContentStorage"/>
+    
+    <alias alias="AwsS3ImageStorage" type="ContentStorage.Storage.AwsS3ImageStorage, ContentStorage"/>
+    <alias alias="AzureBlobImageStorage" type="ContentStorage.Storage.AzureBlobImageStorage, ContentStorage"/>
+    <alias alias="FileSystemImageStorage" type="ContentStorage.Storage.FileSystemImageStorage, ContentStorage"/>
+    <alias alias="MemoryImageStorage" type="ContentStorage.Storage.MemoryImageStorage, ContentStorage"/>
+    
+    <container>
+      
+      <!--  AWS S3 Storage  -->
+      <register name="AwsS3ImageStorage"
+                type ="IImageStorage"
+                mapTo="AwsS3ImageStorage"/>
+
+      <!--  Azure Blob Storage  -->
+      <register name="AzureBlobImageStorage"
+                type ="IImageStorage"
+                mapTo="AzureBlobImageStorage"/>
+
+        <!--  File System Storage  -->
+      <register name="FileSystemImageStorage"
+                type ="IImageStorage"
+                mapTo="FileSystemImageStorage"/>
+
+        <!--  In-Memory Storage  -->
+      <register name="MemoryImageStorage"
+                type ="IImageStorage"
+                mapTo="MemoryImageStorage"/>
+
+    </container>
+  </unity>
+</configuration>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <components>
+
+    <!--  AWS S3 Storage  -->
+    <component id="awsS3Storage"
+               serivce="ContentStorage.Contract.IImageStorage, ContentStorage"
+               type="ContentStorage.Storage.AwsS3ImageStorage, ContentStorage"/>
+    
+    <!--  Azure Blob Storage  -->
+    <component id="azureBlobImageStorage"
+               type="ContentStorage.Storage.AzureBlobImageStorage, ContentStorage"
+               serivce="ContentStorage.Contract.IImageStorage, ContentStorage"/>
+
+    <!--  File System Storage  -->
+    <component id="fileSystemStorage"
+               serivce="ContentStorage.Contract.IImageStorage, ContentStorage"
+               type="ContentStorage.Storage.FileSystemImageStorage, ContentStorage"/>
+
+    <!--  In-Memory Storage  -->
+    <component id="memoryStorage"
+               serivce="ContentStorage.Contract.IImageStorage, ContentStorage"
+               type="ContentStorage.Storage.MemoryImageStorage, ContentStorage"/>
+  
+  </components>
+</configuration>

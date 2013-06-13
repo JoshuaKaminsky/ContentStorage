@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<module name="ImageStorageModule">
+
+  <!--  AWS S3 Storage  -->
+  <component name="awsS3Storage"
+             serivce="ContentStorage.Contract.IImageStorage, ContentStorage"
+             to="ContentStorage.Storage.AwsS3ImageStorage, ContentStorage"/>
+  
+  <!--  Azure Blob Storage  -->
+  <bind name="imageStorage"
+        service="ContentStorage.Contract.IImageStorage, ContentStorage"
+        to="ContentStorage.Storage.AzureBlobImageStorage, ContentStorage"/>
+
+  <!--  File System Storage  -->
+  <bind name="imageStorage"
+        service="ContentStorage.Contract.IImageStorage, ContentStorage"
+        to="ContentStorage.Storage.FileSystemImageStorage, ContentStorage"/>
+
+  <!--  In-Memory Storage  -->
+  <bind name="imageStorage"
+        service="ContentStorage.Contract.IImageStorage, ContentStorage"
+        to="ContentStorage.Storage.MemoryImageStorage, ContentStorage"/>
+    
+</module>

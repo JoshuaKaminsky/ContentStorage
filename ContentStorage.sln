@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentStorage", "ContentStorage\ContentStorage.csproj", "{BB83CCC9-BAAC-4992-BB46-DC619DD05898}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentStorage.Bootstrap.Ninject", "ContentStorage.Bootstrap\ContentStorage.Bootstrap.Ninject.csproj", "{73B6C9C0-4FC1-467E-892D-B516D8C4DA71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentStorage.Test", "ContentStorage.Test\ContentStorage.Test.csproj", "{7DE4F122-4ED7-44C3-8991-62601E2E9EFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{D6A1E0E1-0205-4C6B-8FA9-D025C5600380}"
+	ProjectSection(SolutionItems) = preProject
+		CommonAssemblyInfo.cs = CommonAssemblyInfo.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentStorage.BootStrap.Unity", "ContentStorage.BootStrap.Unity\ContentStorage.BootStrap.Unity.csproj", "{88E1D428-F3A4-4783-B94D-9B3EC8F43085}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentStorage.Bootstrap.CastleWindsor", "ContentStorage.Bootstrap.Castle\ContentStorage.Bootstrap.CastleWindsor.csproj", "{2DF5F13D-C5DF-41FD-91EB-E87358E7B2A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentStorage.Bootstrap.Autofac", "ContentStorage.Bootstrap.Autofac\ContentStorage.Bootstrap.Autofac.csproj", "{8A0174ED-DF52-418C-99B2-456BA81F83C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentStorage.TestClient", "ContentStorage.TestClient\ContentStorage.TestClient.csproj", "{73C384FB-398A-4424-A47F-E35435381CBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB83CCC9-BAAC-4992-BB46-DC619DD05898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB83CCC9-BAAC-4992-BB46-DC619DD05898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB83CCC9-BAAC-4992-BB46-DC619DD05898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB83CCC9-BAAC-4992-BB46-DC619DD05898}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73B6C9C0-4FC1-467E-892D-B516D8C4DA71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B6C9C0-4FC1-467E-892D-B516D8C4DA71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73B6C9C0-4FC1-467E-892D-B516D8C4DA71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73B6C9C0-4FC1-467E-892D-B516D8C4DA71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DE4F122-4ED7-44C3-8991-62601E2E9EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DE4F122-4ED7-44C3-8991-62601E2E9EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DE4F122-4ED7-44C3-8991-62601E2E9EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DE4F122-4ED7-44C3-8991-62601E2E9EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88E1D428-F3A4-4783-B94D-9B3EC8F43085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E1D428-F3A4-4783-B94D-9B3EC8F43085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E1D428-F3A4-4783-B94D-9B3EC8F43085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E1D428-F3A4-4783-B94D-9B3EC8F43085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DF5F13D-C5DF-41FD-91EB-E87358E7B2A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DF5F13D-C5DF-41FD-91EB-E87358E7B2A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DF5F13D-C5DF-41FD-91EB-E87358E7B2A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DF5F13D-C5DF-41FD-91EB-E87358E7B2A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A0174ED-DF52-418C-99B2-456BA81F83C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0174ED-DF52-418C-99B2-456BA81F83C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A0174ED-DF52-418C-99B2-456BA81F83C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A0174ED-DF52-418C-99B2-456BA81F83C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73C384FB-398A-4424-A47F-E35435381CBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C384FB-398A-4424-A47F-E35435381CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C384FB-398A-4424-A47F-E35435381CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C384FB-398A-4424-A47F-E35435381CBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal
