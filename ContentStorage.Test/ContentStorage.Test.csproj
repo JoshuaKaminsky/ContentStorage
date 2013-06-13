@@ -96,23 +96,23 @@
     <Compile Include="UnityContainerTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hmb.Assets.ImageStorage.Bootstrap.Autofac\ContentStorage.Bootstrap.Autofac.csproj">
+    <ProjectReference Include="..\ContentStorage.Bootstrap.Autofac\ContentStorage.Bootstrap.Autofac.csproj">
       <Project>{8a0174ed-df52-418c-99b2-456ba81f83c3}</Project>
       <Name>ContentStorage.Bootstrap.Autofac</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Hmb.Assets.ImageStorage.Bootstrap.Castle\ContentStorage.Bootstrap.CastleWindsor.csproj">
+    <ProjectReference Include="..\ContentStorage.Bootstrap.Castle\ContentStorage.Bootstrap.CastleWindsor.csproj">
       <Project>{2df5f13d-c5df-41fd-91eb-e87358e7b2a2}</Project>
       <Name>ContentStorage.Bootstrap.CastleWindsor</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Hmb.Assets.ImageStorage.BootStrap.Unity\ContentStorage.BootStrap.Unity.csproj">
+    <ProjectReference Include="..\ContentStorage.BootStrap.Unity\ContentStorage.BootStrap.Unity.csproj">
       <Project>{88E1D428-F3A4-4783-B94D-9B3EC8F43085}</Project>
       <Name>ContentStorage.BootStrap.Unity</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Hmb.Assets.ImageStorage.Bootstrap\ContentStorage.Bootstrap.Ninject.csproj">
+    <ProjectReference Include="..\ContentStorage.Bootstrap\ContentStorage.Bootstrap.Ninject.csproj">
       <Project>{73B6C9C0-4FC1-467E-892D-B516D8C4DA71}</Project>
       <Name>ContentStorage.Bootstrap.Ninject</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Hmb.Assets.ImageStorage\ContentStorage.csproj">
+    <ProjectReference Include="..\ContentStorage\ContentStorage.csproj">
       <Project>{BB83CCC9-BAAC-4992-BB46-DC619DD05898}</Project>
       <Name>ContentStorage</Name>
     </ProjectReference>

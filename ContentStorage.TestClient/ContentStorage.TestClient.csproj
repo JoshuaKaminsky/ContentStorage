@@ -48,11 +48,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hmb.Assets.ImageStorage.Bootstrap.Autofac\ContentStorage.Bootstrap.Autofac.csproj">
+    <ProjectReference Include="..\ContentStorage.Bootstrap.Autofac\ContentStorage.Bootstrap.Autofac.csproj">
       <Project>{8A0174ED-DF52-418C-99B2-456BA81F83C3}</Project>
       <Name>ContentStorage.Bootstrap.Autofac</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Hmb.Assets.ImageStorage\ContentStorage.csproj">
+    <ProjectReference Include="..\ContentStorage\ContentStorage.csproj">
       <Project>{BB83CCC9-BAAC-4992-BB46-DC619DD05898}</Project>
       <Name>ContentStorage</Name>
     </ProjectReference>

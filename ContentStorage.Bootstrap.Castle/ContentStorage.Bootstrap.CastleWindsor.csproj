@@ -58,7 +58,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hmb.Assets.ImageStorage\ContentStorage.csproj">
+    <ProjectReference Include="..\ContentStorage\ContentStorage.csproj">
       <Project>{BB83CCC9-BAAC-4992-BB46-DC619DD05898}</Project>
       <Name>ContentStorage</Name>
     </ProjectReference>
