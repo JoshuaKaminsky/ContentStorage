@@ -5,10 +5,19 @@
     /// </summary>
     internal interface IAwsS3StorageConfiguration
     {
+        /// <summary>
+        /// The Amazon Web Service Access Key
+        /// </summary>
         string AccessKey { get; }
 
+        /// <summary>
+        /// The Amazon Web Service Secret Key
+        /// </summary>
         string SecretKey { get; }
 
+        /// <summary>
+        /// The Amazon Web Service BucketName
+        /// </summary>
         string BucketName { get; }
     }
 }

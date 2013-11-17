@@ -5,22 +5,24 @@ namespace ContentStorage.Configuration
     internal class AzureStorageConfigurationSection : BaseStorageConfigurationSection
     {
         private const string AzureImageStorageConfigurationSectionName = "azureStorageConfiguration";
+        private const string ConnectionStringKey = "connectionString";
+        private const string ContainerNameKey = "containerName";
 
         public static AzureStorageConfigurationSection GetConfig()
         {
             return GetStorageConfig<AzureStorageConfigurationSection>(AzureImageStorageConfigurationSectionName);
         }
 
-        [ConfigurationProperty("connectionStringKey", IsRequired = true)]
-        public string ConnectionStringKey
+        [ConfigurationProperty(ConnectionStringKey, IsRequired = true)]
+        public string ConnectionString
         {
-            get { return this["connectionStringKey"] as string; }
+            get { return this[ConnectionStringKey] as string; }
         }
 
-        [ConfigurationProperty("containerName", IsRequired = true)]
+        [ConfigurationProperty(ContainerNameKey, IsRequired = true)]
         public string ContainerName
         {
-            get { return this["containerName"] as string; }
+            get { return this[ContainerNameKey] as string; }
         }
     }
 }

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Configuration;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using ContentStorage.Configuration.Contract;
 
 namespace ContentStorage.Configuration
@@ -16,19 +14,11 @@ namespace ContentStorage.Configuration
 
             if (configuration == null)
             {
-                Trace.TraceError("Could not load image storage configuration.");
+                Trace.TraceError("Could not load Azure Blob image storage configuration.");
                 return;
             }
 
-            try
-            {
-                _connectionString = ConfigurationManager.ConnectionStrings[configuration.ConnectionStringKey].ConnectionString;
-            }
-            catch (Exception)
-            {
-                Trace.TraceError("Could not find azure storage connection string with name {0}", configuration.ConnectionStringKey);
-            }
-            
+            _connectionString = configuration.ConnectionString;
             _containerName = configuration.ContainerName;
         }
 

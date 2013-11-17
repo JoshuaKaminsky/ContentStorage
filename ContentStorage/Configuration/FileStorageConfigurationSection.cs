@@ -5,16 +5,17 @@ namespace ContentStorage.Configuration
     internal class FileStorageConfigurationSection : BaseStorageConfigurationSection
     {
         private const string FileImageStorageConfigurationSectionName = "fileStorageConfiguration";
+        private const string FileStorageDirectoryKey = "fileStorageDirectory";
 
         public static FileStorageConfigurationSection GetConfig()
         {
             return GetStorageConfig<FileStorageConfigurationSection>(FileImageStorageConfigurationSectionName);
         }
 
-        [ConfigurationProperty("fileStorageDirectory", IsRequired = true)]
+        [ConfigurationProperty(FileStorageDirectoryKey, IsRequired = true)]
         public string FileStorageDirectory
         {
-            get { return this["fileStorageDirectory"] as string; }
+            get { return this[FileStorageDirectoryKey] as string; }
         }
     }
 }

@@ -15,7 +15,7 @@ namespace ContentStorage.Configuration
 
             if (configuration == null)
             {
-                Trace.TraceError("Could not load image storage configuration.");
+                Trace.TraceError("Could not load Amazon Web Service image storage configuration.");
                 return;
             }
 

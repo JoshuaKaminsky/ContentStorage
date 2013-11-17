@@ -81,9 +81,12 @@
     <Compile Include="Configuration\Contract\IBlobStorageConfiguration.cs" />
     <Compile Include="Configuration\Contract\IFileStorageConfiguration.cs" />
     <Compile Include="Configuration\AwsS3StorageConfiguration.cs" />
+    <Compile Include="Configuration\Contract\ISqlConfiguration.cs" />
+    <Compile Include="Configuration\SqlStorageConfigurationSection.cs" />
     <Compile Include="Configuration\FileStorageConfigurationSection.cs" />
     <Compile Include="Configuration\FileStorageConfiguration.cs" />
     <Compile Include="Azure\Contract\ICloudContainer.cs" />
+    <Compile Include="Configuration\SqlStorageConfiguration.cs" />
     <Compile Include="Contract\IDataSource.cs" />
     <Compile Include="Contract\IDataStorage.cs" />
     <Compile Include="Contract\IImageSource.cs" />
@@ -98,6 +101,8 @@
     <Compile Include="IO\FileExtension.cs" />
     <Compile Include="IO\FileFunctions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sql\Contract\ISqlClient.cs" />
+    <Compile Include="Sql\SqlClient.cs" />
     <Compile Include="StorageFactory.cs" />
     <Compile Include="Storage\AwsS3ImageStorage.cs" />
     <Compile Include="Storage\AzureBlobImageStorage.cs" />
@@ -107,6 +112,7 @@
     <Compile Include="Storage\FileSystemImageStorage.cs" />
     <Compile Include="Storage\ImageSource.cs" />
     <Compile Include="Storage\MemoryImageStorage.cs" />
+    <Compile Include="Storage\SqlImageStorage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="contentStorage.config">

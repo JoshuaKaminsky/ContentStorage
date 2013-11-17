@@ -9,7 +9,6 @@ namespace ContentStorage.Bootstrap.Ninject
 
         public void Register()
         {
-            //_kernel = new StandardKernel(new NinjectSettings { LoadExtensions = false }, new XmlExtensionModule(), new StorageModule());
             _kernel = new StandardKernel(new StorageModule());
         }
 

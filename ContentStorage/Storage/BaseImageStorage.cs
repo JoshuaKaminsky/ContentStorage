@@ -58,7 +58,7 @@ namespace ContentStorage.Storage
             return string.Format("{0}{1}", source, ThumbnailExtension);
         }
 
-        protected static ImageSource GetImageSourceFromSource(string key)
+        public static ImageSource GetImageSourceFromSource(string key)
         {
             if (string.IsNullOrWhiteSpace(key))
                 return null;

@@ -32,6 +32,8 @@ namespace ContentStorage.Bootstrap.Ninject
 
             Bind<IDirectoryFunctions>().To<DirectoryFunctions>();
             Bind<IFileFunctions>().To<FileFunctions>();
+
+
         }
     }
 }
